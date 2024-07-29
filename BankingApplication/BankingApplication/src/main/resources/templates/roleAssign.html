@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Assign Roles</title>
+</head>
+<body>
+<h1>Assign Roles</h1>
+<form th:action="@{/assignRoles}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="roles">Roles (comma separated):</label>
+    <input type="text" id="roles" name="roles" required>
+
+    <button type="submit">Assign Roles</button>
+</form>
+</body>
+</html>

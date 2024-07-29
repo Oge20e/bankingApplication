@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+</head>
+<h1>Create Account</h1>
+<form action="/create" method="post">
+    <label for="accountHolderName">Account Holder Name:</label>
+    <input type="text" id="accountHolderName" name="accountHolderName" required>
+    <label for="pin">PIN:</label>
+    <input type="number" id="pin" name="pin" required>
+    <button type="submit">Create</button>
+</form>
+
+</body>
+</html>

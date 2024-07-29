@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>View All Accounts</title>
+    <style>
+        .right-align {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<h1>All Accounts</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Account Number</th>
+        <th>Account Holder Name</th>
+        <th class="right-align">Balance</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="account : ${accounts}">
+        <td th:text="${account.accountNumber}"></td>
+        <td th:text="${account.accountHolderName}"></td>
+        <td th:text="${account.balance}" class="right-align"></td>
+    </tbody>
+</table>
+</body>
+</html>
